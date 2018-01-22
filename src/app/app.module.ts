@@ -14,6 +14,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './item/item.component';
 import { ImagesComponent } from './images/images.component';
 import { ImageComponent } from './image/image.component';
+import { GenericTableComponent } from './shared/tables/generic-table/generic-table.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ImageComponent } from './image/image.component';
     ItemsComponent,
     ItemComponent,
     ImagesComponent,
-    ImageComponent
+    ImageComponent,
+    GenericTableComponent
   ],
   imports: [
     BrowserModule
