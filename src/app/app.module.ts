@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from "@angular/forms";
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,9 @@ import { ItemComponent } from './item/item.component';
 import { ImagesComponent } from './images/images.component';
 import { ImageComponent } from './image/image.component';
 import { GenericTableComponent } from './shared/tables/generic-table/generic-table.component';
+
+
+import { AppRoutingModule } from "./app-routing.module";
 
 
 @NgModule({
@@ -34,7 +38,9 @@ import { GenericTableComponent } from './shared/tables/generic-table/generic-tab
     GenericTableComponent
   ],
   imports: [
-    BrowserModule
+    AppRoutingModule,
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
