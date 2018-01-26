@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
+import { MatMenuModule, MatIconModule, MatButtonModule, MatCardModule } from "@angular/material";
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +21,7 @@ import { GenericTableComponent } from './shared/tables/generic-table/generic-tab
 
 
 import { AppRoutingModule } from "./app-routing.module";
+import { HeaderComponent } from './shared/partials/header/header.component';
 
 
 @NgModule({
@@ -35,12 +38,18 @@ import { AppRoutingModule } from "./app-routing.module";
     ItemComponent,
     ImagesComponent,
     ImageComponent,
-    GenericTableComponent
+    GenericTableComponent,
+    HeaderComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    FormsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
