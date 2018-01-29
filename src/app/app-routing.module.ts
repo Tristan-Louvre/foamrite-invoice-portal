@@ -20,9 +20,9 @@ const routes: Routes = [
   { path: 'clients/:id', component: ClientComponent},
   { path: 'images', component: ImagesComponent},
   { path: 'images/:id', component: ImageComponent},
-  { path: 'invoice', component: InvoicesComponent},
+  { path: 'invoices', component: InvoicesComponent},
   { path: 'invoices/:id', component: InvoiceComponent},
-  { path: 'item', component: ItemsComponent},
+  { path: 'items', component: ItemsComponent},
   { path: 'items/:id', component: ItemComponent},
   { path: 'users', component: UsersComponent},
   { path: 'users/:id', component: UserComponent}

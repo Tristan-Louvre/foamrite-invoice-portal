@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule } from "@angular/forms";
-import { MatMenuModule, MatIconModule, MatButtonModule, MatCardModule } from "@angular/material";
+import { MatIconModule, MatButtonModule, MatCardModule, MatToolbarModule } from "@angular/material";
 
 
 import { AppComponent } from './app.component';
@@ -49,7 +49,7 @@ import { HeaderComponent } from './shared/partials/header/header.component';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    MatMenuModule
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
