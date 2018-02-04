@@ -14,7 +14,7 @@ import { NgModule } from "@angular/core";
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: '', redirectTo: '/clients', pathMatch: 'full' },
   { path: 'auth', component: AuthenticationComponent},
   { path: 'clients', component: ClientsComponent},
   { path: 'clients/:id', component: ClientComponent},
